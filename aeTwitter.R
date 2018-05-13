@@ -78,3 +78,14 @@ var<-var(tdf$caracteres)
 #desviación estandar
 
 sd<-sd(tdf$caracteres)
+
+#covarianza: cuanto se parecen dos variables
+
+c1<-tdf$caracteres[1:50]
+c2<-tdf$caracteres[51:100]
+
+cov(c1,c2)
+
+#correlaciones
+cor(c1,c2)
+
