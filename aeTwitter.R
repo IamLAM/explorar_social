@@ -89,3 +89,17 @@ cov(c1,c2)
 #correlaciones
 cor(c1,c2)
 
+
+#desplegando graficos por histograma
+
+hist(tdf$caracteres)
+hist(tdf$caracteres,breaks=20)
+
+#desplegando graficos por densidad
+
+plot(density(tdf$caracteres))
+
+#desplegando graficos por scatterplot
+
+plot(tdf$caracteres,tdf$retweetCount,col=tdf$tipo,pch=as.numeric(tdf$tipo))
+legend('topleft',levels(tdf$tipo),lty=1,col=1:4,bty='n',cex=0.75)
