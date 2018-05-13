@@ -20,3 +20,6 @@ tdf<-twListToDF(t)
 #Buscaremos los trending topics en mx
 getTrends(23424900)
 
+# obtenemos los seguidores de la cuenta webcams
+user<-getUser('webcamsdemexico')
+user$getFollowers()
