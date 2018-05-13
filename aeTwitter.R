@@ -28,4 +28,42 @@ tdf$tipo[!tdf$isRetweet&tdf$favoriteCount==0]<-'D'
 
 tdf$tipo<-as.factor(tdf$tipo)
 
+#comenzaremos a trabajar con la frecuencias de apariciones
+table(toupper(substr(tdf$screenName,1,1)))
 
+#frecuencia por porcentaje
+dim(tdf)[1]
+table(toupper(substr(tdf$screenName,1,1)))/dim(tdf)[1]
+#determinaremos la moda
+
+"
+moda <- function(var){
+  
+  frec.var <- table(var)
+  v <- which(frec.var == max(frec.var))
+  name(v)
+  
+}
+
+moda(tdf$caracteres)
+"
+
+#media
+
+mean(tdf$caracteres)
+#media truncada: 
+
+caracteres2<-tdf$caracteres
+caracteres2[1]<-5000
+mean(caracteres2)
+
+
+#mediana 
+median(tdf$caracteres)
+
+
+#cuartiles percentiles
+
+quantile(tdf$caracteres,0.4)
+#calcular varios percentil
+quantile(tdf$caracteres,c(0,0.25,0.5,0.75,1))
