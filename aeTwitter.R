@@ -67,3 +67,14 @@ median(tdf$caracteres)
 quantile(tdf$caracteres,0.4)
 #calcular varios percentil
 quantile(tdf$caracteres,c(0,0.25,0.5,0.75,1))
+
+#rangos
+rango<-max(tdf$caracteres)-min(tdf$caracteres)
+
+#varianza
+
+var<-var(tdf$caracteres)
+
+#desviación estandar
+
+sd<-sd(tdf$caracteres)
