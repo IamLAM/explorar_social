@@ -17,3 +17,6 @@ t<-searchTwitter("ingenioteka",n=20,lang="es")
 #convertimos a un data frame
 tdf<-twListToDF(t)
 
+#Buscaremos los trending topics en mx
+getTrends(23424900)
+
