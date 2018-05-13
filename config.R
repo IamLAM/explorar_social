@@ -1,0 +1,4 @@
+consumer_key<-"QeynoGIzqXJepa39b7vba2Ksi"
+consumer_secret<-"1IeXF9UfHnDGSZfveSSpcfS2GFFTfQDiogKWQwYVLzLckagIlO"
+access_token<-"2305936544-5qqzg1GXtxN5HKG3sIgR3LlAZCT2bfo9REC3Dbn"
+access_secret<-"7kMHylfzoPX7wJJyV78nYiwi8peTrp1dcaogGDimTztU4"
